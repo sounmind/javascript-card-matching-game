@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Card Matching Game</title>
+  </head>
+  <body>
+    <div class="controller-container">
+      <button class="reset-button">초기화</button>
+      <button class="end-game">게임 끝내고 카드 모두 뒤집기</button>
+    </div>
+    <div class="cards-container">
+      <div class="card" data-number="0">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="1">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="2">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="3">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="4">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="5">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="6">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="7">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="8">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="9">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="10">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="11">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="12">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="13">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="14">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="card" data-number="15">
+        <div class="inner-card">
+          <div class="card-cover"></div>
+          <div class="card-image-container">
+            <img
+              src="https://images.unsplash.com/photo-1594634983049-2052a211c3a3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+              alt="card-image"
+              class="card-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./app/index.js"></script>
+</html>
