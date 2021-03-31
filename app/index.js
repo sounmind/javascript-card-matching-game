@@ -1,3 +1,3 @@
 import GameController from "./gameController";
 
-new GameController();
+const gameController = new GameController();

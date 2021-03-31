@@ -1,6 +1,0 @@
-{
-    "plugins": [
-        ["@babel/plugin-proposal-private-property-in-object", {}, "private-property"],
-        ["@babel/plugin-proposal-class-properties", {}, "class-properties"]
-    ]
-}
