@@ -32,6 +32,8 @@ const TAG_IMG = "IMG";
 
 const PLAYER_OPTION_DUO = "solo";
 const PLAYER_OPTION_SOLO = "duo";
+const OPTION_NAME_PLAYER = "player";
+const OPTION_NAME_SIZE = "size";
 
 const NAME_PLAYER_SOLO = "짝 맞추기 달인";
 const NAMES_PLAYER_DUO = ["카드 달인", "카드 장인"];
@@ -81,6 +83,8 @@ const CONSTANTS = {
 
   playerOptionSolo: PLAYER_OPTION_DUO,
   playerOptionDuo: PLAYER_OPTION_SOLO,
+  playerOptionName: OPTION_NAME_PLAYER,
+  sizeOptionName: OPTION_NAME_SIZE,
 
   soloPlayerName: NAME_PLAYER_SOLO,
   duoPlayerNames: NAMES_PLAYER_DUO,

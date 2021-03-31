@@ -25,15 +25,15 @@ export default class GameController {
     if (!targetClassList.includes(CONSTANTS.optionClass)) {
       return;
     }
-    const [optionNameClass, optionTypeClass] = [targetClassList.pop(), targetClassList.pop()];
-    if (optionTypeClass === CONSTANTS.playerOptionClass) {
-      this.#playerOption = optionNameClass;
+    const [optionName, optionType] = [target.dataset.optionName, target.dataset.optionType];
+    if (optionType === CONSTANTS.playerOptionName) {
+      this.#playerOption = optionName;
       this.#createPlayerList();
     }
-    if (optionTypeClass === CONSTANTS.sizeOptionClass) {
-      this.#sizeOption = parseInt(target.dataset.size);
+    if (optionType === CONSTANTS.sizeOptionName) {
+      this.#sizeOption = parseInt(target.dataset.optionName);
     }
-    Array.from(document.getElementsByClassName(optionTypeClass)).forEach(({ classList }) =>
+    Array.from(document.getElementsByClassName(optionType)).forEach(({ classList }) =>
       classList.add(CONSTANTS.unclickableClass)
     );
     target.classList.add(CONSTANTS.clickedClass);
