@@ -21,8 +21,6 @@ export default class GameBoard {
   static $cards = document.getElementsByClassName(CONSTANTS.cardClass);
 
   constructor(gameController) {
-    console.log(GameBoard.$cards);
-
     this.#gameController = gameController;
     this.#scoreBoard = gameController.getScoreBoard();
     this.#size = gameController.getSizeOption();
@@ -61,7 +59,8 @@ export default class GameBoard {
 
   #createCardElements = () => {
     const card = document.querySelector(".card");
-    for (let i = 1; i < this.#size; i++) {
+    GameBoard.$cardsContainer.innerHTML = "";
+    for (let i = 0; i < this.#size; i++) {
       const newCard = card.cloneNode(true);
       newCard.dataset.number = i;
       GameBoard.$cardsContainer.appendChild(newCard);

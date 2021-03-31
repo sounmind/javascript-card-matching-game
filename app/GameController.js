@@ -4,11 +4,11 @@ import Player from "./player";
 import ScoreBoard from "./ScoreBoard";
 
 export default class GameController {
-  $gameOptionContainer = document.querySelector(CONSTANTS.gameOptionsQuery);
+  static $gameOptionContainer = document.querySelector(CONSTANTS.gameOptionsQuery);
   static $gameOptions = document.querySelectorAll(CONSTANTS.gameOptionQuery);
   static $gameResult = document.querySelector(CONSTANTS.gameResultQuery);
   static $gameDescription = document.querySelector(CONSTANTS.gameDescriptionQuery);
-  $gameContainer = document.querySelector(CONSTANTS.gameContainerQuery);
+  static $gameContainer = document.querySelector(CONSTANTS.gameContainerQuery);
 
   #playerOption;
   #sizeOption;
@@ -17,7 +17,7 @@ export default class GameController {
   #playerList = [];
 
   constructor() {
-    this.$gameOptionContainer.addEventListener("click", this.#handleClickGameOption);
+    GameController.$gameOptionContainer.addEventListener("click", this.#handleClickGameOption);
   }
 
   #handleClickGameOption = ({ target }) => {
@@ -39,7 +39,7 @@ export default class GameController {
     target.classList.add(CONSTANTS.clickedClass);
     if (this.#playerOption && this.#sizeOption) {
       setTimeout(() => {
-        this.$gameOptionContainer.classList.add(CONSTANTS.invisibleClass);
+        GameController.$gameOptionContainer.classList.add(CONSTANTS.invisibleClass);
         this.#startGame();
       }, CONSTANTS.beforeGameStartWaitingTime);
     }
@@ -55,7 +55,7 @@ export default class GameController {
   };
 
   #startGame = () => {
-    this.$gameContainer.classList.remove(CONSTANTS.invisibleClass);
+    GameController.$gameContainer.classList.remove(CONSTANTS.invisibleClass);
     this.#scoreBoard = new ScoreBoard(this);
     this.#gameBoard = new GameBoard(this);
   };
@@ -78,14 +78,14 @@ export default class GameController {
     );
     ScoreBoard.$statuses.forEach(($status) => $status.classList.add(CONSTANTS.invisibleClass));
 
-    this.$gameOptionContainer.classList.remove(CONSTANTS.invisibleClass);
+    GameController.$gameOptionContainer.classList.remove(CONSTANTS.invisibleClass);
     GameController.$gameOptions.forEach(($option) =>
       $option.classList.remove(CONSTANTS.clickedClass, CONSTANTS.unclickableClass)
     );
     GameController.$gameResult.textContent = "";
     GameController.$gameDescription.textContent = "";
 
-    this.$gameContainer.classList.add(CONSTANTS.invisibleClass);
+    GameController.$gameContainer.classList.add(CONSTANTS.invisibleClass);
 
     this.#playerOption = null;
     this.#sizeOption = null;
