@@ -71,21 +71,17 @@ export default class GameController {
   getScoreBoard = () => this.#scoreBoard;
 
   handleRestartButton = (clickCardCallBack) => () => {
+    const { invisibleClass, flipClass, unclickableClass, clickedClass } = CONSTANTS;
     GameBoard.$cardsContainer.removeEventListener("click", clickCardCallBack);
-    GameBoard.$stopAndShowButton.classList.remove(CONSTANTS.invisibleClass);
-    Array.from(GameBoard.$cards).forEach(($card) =>
-      $card.classList.remove(CONSTANTS.unclickableClass, CONSTANTS.flipClass)
-    );
-    ScoreBoard.$statuses.forEach(($status) => $status.classList.add(CONSTANTS.invisibleClass));
+    GameBoard.$stopAndShowButton.classList.remove(invisibleClass);
+    Array.from(GameBoard.$cards).forEach(($card) => $card.classList.remove(unclickableClass, flipClass));
+    ScoreBoard.$statuses.forEach(($status) => $status.classList.add(invisibleClass));
 
-    GameController.$gameOptionContainer.classList.remove(CONSTANTS.invisibleClass);
-    GameController.$gameOptions.forEach(($option) =>
-      $option.classList.remove(CONSTANTS.clickedClass, CONSTANTS.unclickableClass)
-    );
+    GameController.$gameOptionContainer.classList.remove(invisibleClass);
+    GameController.$gameOptions.forEach(($option) => $option.classList.remove(clickedClass, unclickableClass));
     GameController.$gameResult.textContent = "";
     GameController.$gameDescription.textContent = "";
-
-    GameController.$gameContainer.classList.add(CONSTANTS.invisibleClass);
+    GameController.$gameContainer.classList.add(invisibleClass);
 
     this.#playerOption = null;
     this.#sizeOption = null;
