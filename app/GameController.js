@@ -1,6 +1,6 @@
 import CONSTANTS from "./constants";
 import GameBoard from "./GameBoard";
-import Player from "./player";
+import Player from "./Player";
 import ScoreBoard from "./ScoreBoard";
 
 export default class GameController {
