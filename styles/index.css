@@ -13,6 +13,16 @@ button {
   cursor: pointer;
 }
 
+.option-description {
+  position: absolute;
+  background-color: aquamarine;
+  width: 50vw;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 10px;
+}
+
 .game-options {
   position: absolute;
   top: 50%;
@@ -26,7 +36,7 @@ button {
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 
 .option {
