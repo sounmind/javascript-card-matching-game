@@ -195,7 +195,7 @@ button {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 3s;
+  transition: transform 1s;
   transform-style: preserve-3d;
   border-radius: 10px;
 }
@@ -210,13 +210,6 @@ button {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-}
-
-.card-cover {
-  backface-visibility: hidden;
-}
-
-.card-image-container {
   backface-visibility: visible;
 }
 

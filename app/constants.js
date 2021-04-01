@@ -41,7 +41,7 @@ const NAMES_PLAYER_DUO = ["카드 달인", "카드 장인"];
 const MAX_CARD_FLIPS_PER_TURN = 2;
 
 const WAITING_TIME_BEFORE_GAME_START = "1500";
-const WAITING_TIME_CARD_MATCHING = "500";
+const WAITING_TIME_CARD_MATCHING = "1000";
 
 const MESSAGE_TURN_DESCRIPTION = " 님의 차례입니다.";
 const MESSAGE_WIN = " (이)가 이겼어요!";
