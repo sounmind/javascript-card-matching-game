@@ -75,11 +75,11 @@ export default class GameBoard {
   };
 
   #handleClickCard = ({ target }) => {
-    if (!(target.tagName === CONSTANTS.imgTag || target.classList.contains(CONSTANTS.cardImageContainerClass))) {
+    if (target.tagName !== CONSTANTS.imgTag && target.className !== CONSTANTS.cardCoverClass) {
       return;
     }
-    const cardIndexInBoard = target.dataset.index || target.querySelector(CONSTANTS.imgTag).dataset.index;
-    const clickedCard = this.#cardRepository[cardIndexInBoard];
+    const cardIndexInBoard = target.dataset.index || target.parentElement.parentElement.dataset.number;
+    const clickedCard = this.#cardRepository[parseInt(cardIndexInBoard)];
 
     this.#flippedCards[this.#flippedCards.length] = clickedCard;
     clickedCard.getItsElement().classList.add(CONSTANTS.flipClass, CONSTANTS.unclickableClass);

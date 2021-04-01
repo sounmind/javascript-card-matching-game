@@ -27,6 +27,7 @@ const CLASS_SIZE_OPTION = "size-option";
 const CLASS_CLICKED = "clicked";
 const CLASS_INVISIBLE = "invisible";
 const CLASS_CARD_IMAGE_CONTAINER = "card-image-container";
+const CLASS_CARD_COVER = "card-cover";
 
 const TAG_IMG = "IMG";
 
@@ -78,6 +79,7 @@ const CONSTANTS = {
   clickedClass: CLASS_CLICKED,
   invisibleClass: CLASS_INVISIBLE,
   cardImageContainerClass: CLASS_CARD_IMAGE_CONTAINER,
+  cardCoverClass: CLASS_CARD_COVER,
 
   imgTag: TAG_IMG,
 
