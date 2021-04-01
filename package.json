@@ -22,7 +22,7 @@
     "@babel/plugin-proposal-private-methods": "^7.13.0",
     "@babel/plugin-proposal-private-property-in-object": "^7.13.0",
     "@babel/preset-env": "^7.13.12",
-    "autoprefixer": "^9.0.0",
+    "autoprefixer": "^9.7.6",
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.2.9",
     "postcss-cli": "^8.3.1",
