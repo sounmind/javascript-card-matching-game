@@ -221,7 +221,7 @@ button {
 }
 
 .card-cover {
-  backface-visibility: hidden;
+  backface-visibility: visible;
 }
 
 .card-image-container {
