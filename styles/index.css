@@ -212,6 +212,14 @@ button {
   border-radius: 10px;
 }
 
+.card-cover {
+  backface-visibility: hidden;
+}
+
+.card-image-container {
+  backface-visibility: visible;
+}
+
 .card-image {
   position: relative;
   object-fit: cover;
